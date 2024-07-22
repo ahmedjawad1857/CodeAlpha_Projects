@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+::selection {
+  background-color: #333;
+  color: #56e67f;
+}
+
+html,
+body {
+  height: 100dvh;
+  width: 100%;
+  /* background: rgba(131, 58, 180, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgb(148, 69, 252) 51%,
+    rgb(164, 69, 252) 87%
+  ); */
+  background-color: #000;
+}
+
+.title {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #333;
+}
+
+.main {
+  display: grid;
+  height: calc(100dvh - 50px);
+  width: 100%;
+  place-items: center;
+}
+
+.todo-app {
+  background-color: #3f3e3f;
+  color: #fff;
+  height: 400px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 700px;
+  border-radius: 20px;
+  margin: 0px 90px;
+}
+
+.app-title {
+  text-align: center;
+  padding: 10px 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #363436;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.form::selection {
+  background-color: #000;
+  color: #fff !important;
+}
+/* .input-group {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  transition: all 0.5s ease-in-out;
+}
+label {
+  font-size: 16px;
+}
+.input-group:focus,
+.input-group:hover {
+  outline: none;
+  border: 2px solid #918989;
+  height: 42px;
+}
+.input-group::placeholder {
+  align-content: center;
+} */
+.form button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #56e67f;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.form button:hover {
+  background-color: #5d5b5d;
+}
+.btn {
+  font-size: larger;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.star-btn {
+  color: #fff;
+}
+.star-btn:hover {
+  color: yellow;
+}
+.delete-btn {
+  color: #fff;
+}
+.delete-btn:hover {
+  color: rgb(206, 32, 32);
+}
+
+.edit-btn {
+  color: #fff;
+  -webkit-text-stroke: 0px transparent;
+}
+.edit-btn:hover {
+  color: green;
+}
+.complete-btn {
+  color: #fff;
+}
+.complete-btn:hover {
+  color: #56e67f;
+}
+
+.title {
+  color: #00fd70 #363436 #3f3e3f #5d5b5d #65666b #56e67f;
+}
+
+/* input */
+/* .group {
+  position: relative;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #56e67f;
+  background: transparent;
+}
+
+.input:focus {
+  outline: none;
+}
+
+label {
+  color: #56e67f;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 0px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -15px;
+  font-size: 20px;
+  color: #56e67f;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 200px;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #56e67f;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #56e67f;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+} */
+.inputGroup {
+  font-family: "Segoe UI", sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+  color: #fff;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #3f3e3f;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
