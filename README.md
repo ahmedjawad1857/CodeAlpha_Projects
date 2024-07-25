@@ -1,8 +1,0 @@
-# CodeAlpha_Projects
-
-#00FD70
-#363436
-#3F3E3F
-#5D5B5D
-#65666B
-#56E67F

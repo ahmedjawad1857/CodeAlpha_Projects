@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-App | CodeAlpha project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/71d2995b14.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="stats-container">
+        <div class="details">
+          <h1>Todo App</h1>
+          <p>Keep it up!</p>
+          <div id="progressBar">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <div class="stats-number">
+          <p id="numbers">0 / 0</p>
+        </div>
+      </div>
+      <form class="form-control">
+        <input type="text" id="taskInput" required />
+        <label>
+          <span style="transition-delay: 0ms">E</span
+          ><span style="transition-delay: 50ms">n</span
+          ><span style="transition-delay: 100ms">t</span
+          ><span style="transition-delay: 150ms">e</span
+          ><span style="transition-delay: 200ms">r</span
+          ><span style="transition-delay: 250ms"></span
+          ><span style="transition-delay: 300ms">y</span
+          ><span style="transition-delay: 350ms">o</span
+          ><span style="transition-delay: 400ms">u</span
+          ><span style="transition-delay: 450ms">r</span
+          ><span style="transition-delay: 500ms"></span
+          ><span style="transition-delay: 550ms">t</span
+          ><span style="transition-delay: 600ms">a</span
+          ><span style="transition-delay: 650ms">s</span
+          ><span style="transition-delay: 700ms">k</span>
+        </label>
+        <button id="newTask" type="submit">+</button>
+        <button id="updateTask" type="button" style="display: none">
+          <i class="fa-solid fa-check"></i>
+        </button>
+        <button id="cancelUpdate" type="button" style="display: none">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </form>
+      <ul id="task-list">
+        <!-- Tasks will be dynamically added here -->
+      </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
